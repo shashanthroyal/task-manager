@@ -1,4 +1,5 @@
 import './App.css';
+import 'tailwindcss'
 import { useState, useEffect } from 'react';
 import TaskForm from './components/taskForm';
 import TaskList from './components/taskList';
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Task Manager</h1>
+      <h1 >Task Manager</h1>
       <TaskForm onAdd={(task) => setTasks([...tasks, task])} />
       <TaskList tasks={tasks} setTasks={setTasks} />
     </div>
